@@ -1814,9 +1814,9 @@ margin_bottom = 36.0
 rect_min_size = Vector2( 27, 27 )
 mouse_filter = 1
 size_flags_vertical = 4
-texture_normal = ExtResource( 6 )
-texture_pressed = ExtResource( 92 )
-texture_hover = ExtResource( 93 )
+texture_normal = ExtResource( 38 )
+texture_pressed = ExtResource( 77 )
+texture_hover = ExtResource( 76 )
 texture_disabled = ExtResource( 33 )
 expand = true
 __meta__ = {
@@ -3470,6 +3470,7 @@ __meta__ = {
 [connection signal="pressed" from="MicrobeEditorGUI/CellEditor/BottomLeft/HBoxContainer/NewButton" to="MicrobeEditorGUI" method="OnNewCellClicked"]
 [connection signal="text_changed" from="MicrobeEditorGUI/CellEditor/BottomLeft/HBoxContainer/SpeciesName" to="MicrobeEditorGUI" method="OnSpeciesNameTextChanged"]
 [connection signal="text_entered" from="MicrobeEditorGUI/CellEditor/BottomLeft/HBoxContainer/SpeciesName" to="MicrobeEditorGUI" method="OnSpeciesNameTextEntered"]
+[connection signal="pressed" from="MicrobeEditorGUI/CellEditor/BottomLeft/HBoxContainer/NewButton2" to="." method="RandomizeName"]
 [connection signal="mouse_entered" from="MicrobeEditorGUI/CellEditor/BottomRight" to="MicrobeEditorGUI" method="OnMouseEnter"]
 [connection signal="mouse_exited" from="MicrobeEditorGUI/CellEditor/BottomRight" to="MicrobeEditorGUI" method="OnMouseExit"]
 [connection signal="pressed" from="MicrobeEditorGUI/CellEditor/BottomRight/HBoxContainer/CancelButton" to="MicrobeEditorGUI" method="OnCancelActionClicked"]
